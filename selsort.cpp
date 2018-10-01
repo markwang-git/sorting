@@ -48,7 +48,7 @@ void select_sort(int data[], int size)
     for (i = 0; i < size - 1; i++)
     {
         min = i;
-        for (j = i; j < size; j++)
+        for (j = i + 1; j < size; j++)
             if (data[min] > data[j])
                 min = j;
         if (i == min)
